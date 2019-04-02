@@ -3,15 +3,39 @@ package br.com.data.application;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.data.entities.Heuristics;
+import br.com.data.entities.Line;
+import br.com.data.entities.State;
 import br.com.data.entities.Station;
+import br.com.data.utils.Heuristics;
 
 public class Application {
 
   private static final int STATION_QUANTITY = 14;
+  private static final float TRAIN_VELOCITY = 30 / 60; // unit: km/minute
+  private static final int TIME_TO_CHANGE_LINE = 4; // unit: minutes
   
   private static final float[][] DIRECT_DISTANCES = Heuristics.getDirectDistances();
   private static final float[][] REAL_DISTANCES = Heuristics.getRealDistances();
+  
+  /**
+   * initial state represents the initial station, and line,
+   * where the user is going to start its travel.
+   */
+  private static final String[] INITIAL_STATE_DATA = { "E1", "BLUE" };
+  private static final State INITIAL_STATE = new State(
+      Station.getStation(INITIAL_STATE_DATA[0]),
+      new Line(INITIAL_STATE_DATA[1])
+  );
+  
+  /**
+   * initial state represents the initial station, and line,
+   * where the user is going to start its travel.
+   */
+  private static final String[] FINAL_STATE_DATA = { "E2", "YELLOW" };
+  private static final State FINAL_STATE = new State(
+      Station.getStation(FINAL_STATE_DATA[0]),
+      new Line(INITIAL_STATE_DATA[1])
+  );
   
   public static void main(String[] args) {
     List<Station> stations = new ArrayList<>();

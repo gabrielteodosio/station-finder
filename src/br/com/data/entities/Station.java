@@ -7,6 +7,11 @@ public class Station {
     return new Station(number);
   }
   
+  public static Station getStation(final String name) {
+    String[] string = name.split("E");
+    return new Station(Integer.parseInt(string[1]));
+  }
+  
   public Station(int number) {
     this.number = number;
   }

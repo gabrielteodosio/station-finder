@@ -1,4 +1,4 @@
-package br.com.data.entities;
+package br.com.data.utils;
 
 public class Heuristics {
 
