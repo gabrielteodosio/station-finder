@@ -2,29 +2,35 @@ package br.com.data.entities;
 
 public class Line {
 
+	public enum Colors {
+		RED("RED"),
+		YELLOW("YELLOW"),
+		GREEN("GREEN"),
+		BLUE("BLUE");
+
+		private String color;
+
+		Colors(String color) {
+			this.color = color;
+		}
+
+		public String getColor() {
+			return color;
+		}
+	}
+
 	private final String color;
-	public static final String[] COLORS = { "RED", "YELLOW", "GREEN", "BLUE" };
 
 	public Line(final String color) {
 		this.color = color;
 	}
 
+	public Line(final Line.Colors color) {
+		this.color = color.getColor();
+	}
+
 	public String getColor() {
 		return color;
-	}
-
-	public static Line[] generateLinesByColor(String colors[]) {
-		Line[] lines = new Line[colors.length];
-
-		for (int i = 0; i < lines.length; i++) {
-			lines[i] = new Line(colors[i]);
-		}
-
-		return lines;
-	}
-
-	public static Line[] getLines() {
-		return Line.generateLinesByColor(COLORS);
 	}
 
 	@Override

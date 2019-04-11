@@ -19,7 +19,7 @@ public class Graph {
 	
 	public Graph(List<Edge> edges) {
 		for (int i = 0; i < edges.size(); i++) {
-			adjacents.add(i, new ArrayList<>());
+			adjacents.add(i, new ArrayList<Integer>());
 		}
 		
 		for(Edge current : edges) {

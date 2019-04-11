@@ -3,8 +3,11 @@ package br.com.data.application;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
 
 import br.com.data.entities.Line;
+import br.com.data.entities.Line.Colors;
 import br.com.data.entities.Route;
 import br.com.data.entities.State;
 import br.com.data.entities.Station;
@@ -25,10 +28,19 @@ public class Application {
 
 		HashMap<Station, ArrayList<Route>> stations = reader.readStations();
 
-		State initialState = new State(new Station(11), new Line("BLUE"));
-		State desiredState = new State(new Station(6), new Line("BLUE"));
+		int initialStationNumber = 1;
+		Colors initialColor = Colors.YELLOW;
+
+		int desiredStationNumber = 2;
+		Colors desiredColor = Colors.RED;
+
+		State initialState = new State(new Station(initialStationNumber), new Line(initialColor));
+		State desiredState = new State(new Station(desiredStationNumber), new Line(desiredColor));
 
 		User user = new User(initialState, desiredState);
+		
+		List<Station> closedStations = new ArrayList<Station>();
+		Set<Station> openStations = stations.keySet();
 
 		while (true) {
 			ArrayList<Route> routes = stations.get(user.getCurrentState().getStation());
@@ -48,9 +60,9 @@ public class Application {
 					double realDistance = getRealDistance(departure, destination);
 					double directDistance = getDirectDistance(destination, user.getDesiredState().getStation());
 
-					Double cost = directDistance + realDistance;
+					double cost = directDistance + realDistance;
 					if (!currentLine.getColor().equals(user.getCurrentState().getLine().getColor())) {
-						cost += 4;
+						cost += TIME_TO_CHANGE_LINE;
 					}
 
 					costs.add(cost);
