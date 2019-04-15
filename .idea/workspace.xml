@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d537632-512f-4174-a2e9-350f6a7b5998" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StationFinder.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/data/application/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/data/application/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/data/entities/Graph$Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/data/entities/Graph$Edge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/data/entities/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/data/entities/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/data/entities/Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/data/entities/Line.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/data/entities/Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/data/entities/Route.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/data/entities/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/data/entities/State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/data/entities/Station.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/data/entities/Station.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/data/utils/CSVReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/data/utils/CSVReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/data/utils/Heuristics.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/data/utils/Heuristics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/data/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/data/application/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/data/entities/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/data/entities/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/data/entities/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/data/entities/Line.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -41,11 +23,33 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/data/tests/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/com/data/application/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1386#1395#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +64,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/br/com/data/entities/Line.java" />
         <option value="$PROJECT_DIR$/src/br/com/data/entities/Graph.java" />
-        <option value="$PROJECT_DIR$/src/br/com/data/application/Application.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/br/com/data/application/Application.java" />
       </list>
     </option>
   </component>
@@ -76,8 +80,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,10 +92,32 @@
               <item name="StationFinder" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="StationFinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StationFinder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StationFinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StationFinder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StationFinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StationFinder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -142,7 +166,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -175,7 +199,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/br/com/data/application/Application.java</url>
-          <line>44</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -183,16 +207,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/br/com/data/application/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/data/entities/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -242,7 +256,25 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/data/tests/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/data/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1386#1395#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

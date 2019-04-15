@@ -29,10 +29,10 @@ public class Application {
 		HashMap<Station, ArrayList<Route>> stations = reader.readStations();
 
 		int initialStationNumber = 1;
-		Colors initialColor = Colors.YELLOW;
+		Colors initialColor = Colors.BLUE;
 
-		int desiredStationNumber = 2;
-		Colors desiredColor = Colors.RED;
+		int desiredStationNumber = 6;
+		Colors desiredColor = Colors.BLUE;
 
 		State initialState = new State(new Station(initialStationNumber), new Line(initialColor));
 		State desiredState = new State(new Station(desiredStationNumber), new Line(desiredColor));
